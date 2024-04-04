@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "huffman.h": "c",
+    "byte.h": "c",
+    "stdlib.h": "c"
+  }
+}
