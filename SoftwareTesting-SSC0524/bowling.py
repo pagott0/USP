@@ -17,7 +17,10 @@ def calculateStrike(allFrames, index):
       strikePoints += calculateSpare(allFrames, index+2)
       return strikePoints
     strikePoints += transformPoints(allFrames[index+2])
-    strikePoints += transformPoints(allFrames[index+3])
+    if(allFrames[index+3] == '/'):
+      strikePoints += calculateSpare(allFrames, index+3)
+    else:
+      strikePoints += transformPoints(allFrames[index+3])
   return strikePoints
   
 def calculateSpare(allFrames, index):
