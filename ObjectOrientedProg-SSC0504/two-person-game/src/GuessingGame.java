@@ -48,7 +48,7 @@ public class GuessingGame {
     //method to return the feedback of the current guess.
     public String feedback(int guess) {
         if(guess == targetNumber) {
-            return "Correct! You won! Number of guesses: " + numberGuesses;
+            return "Correct! You won! Number of guesses: " + countGuess();
         } else if (guess > targetNumber) {
             return "Hmmm... Try a lower number.";
         } else {
