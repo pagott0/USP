@@ -13,7 +13,7 @@ public class GuessingGame {
         hasGuessedRight = false;
     }
 
-    //basically it is the same thing of the setup, but it prints the message of the game.
+    //basically it is the same thing of the constructor, but it prints the message of the game.
     //i'm using this method to initialize the game again if the user wants to play another time.
     public void setup() {
         Random rand = new Random();
