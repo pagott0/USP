@@ -5,7 +5,7 @@ public class GuessingGame {
     private int numberGuesses;
     private boolean hasGuessedRight;
 
-    //Constructor: initialize the atributes of the game. Target number is a random number between 1 and 100, number of guesses 0 and the user have not guessed right yet.
+    //Constructor: initialize the attributes of the game. Target number is a random number between 1 and 100, number of guesses 0 and the user have not guessed right yet.
     public GuessingGame() {
         Random rand = new Random();
         targetNumber = rand.nextInt(100) + 1;
