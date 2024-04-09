@@ -12,7 +12,7 @@ public class GuessingGame {
         numberGuesses = 0;
         hasGuessedRight = false;
     }
-    //personally, i would not create this setup method, but you asked for it in the exercise.
+
     //basically it is the same thing of the setup, but it prints the message of the game.
     //i'm using this method to initialize the game again if the user wants to play another time.
     public void setup() {
