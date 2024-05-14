@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ObjectOrientedProg-SSC0504.iml" filepath="$PROJECT_DIR$/ObjectOrientedProg-SSC0504.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simpleCalculatorGui/simpleCalculatorGui.iml" filepath="$PROJECT_DIR$/simpleCalculatorGui/simpleCalculatorGui.iml" />
       <module fileurl="file://$PROJECT_DIR$/two-person-game/two-person-game.iml" filepath="$PROJECT_DIR$/two-person-game/two-person-game.iml" />
     </modules>
   </component>
