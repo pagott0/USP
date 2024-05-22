@@ -64,8 +64,13 @@ formatFrames frames totalScore = intercalate " | " (map formatFrame (init frames
     formatFrame _ = error "Invalid frame"
 
     formatLastFrame :: Frame -> String
+    formatLastFrame [10, 10, 10] = "X X X"
     formatLastFrame [10, a, b] 
         | a + b == 10 = "X " ++ show a ++ " /"
         | otherwise = "X " ++ show a ++ " " ++ show b
-    formatLastFrame [a, b, c] = show a ++ " / " ++ show c
+    formatLastFrame [10, 10] = "X X"  -- Se ambos os lançamentos forem 10, mostramos "X X"
+    formatLastFrame [a, b, 10] = show a ++ " / X"  -- Se o último frame for um spare seguido de um strike, mostramos "A / X"
     formatLastFrame frame = formatFrame frame  -- Reuse the regular format for other cases
+
+
+
